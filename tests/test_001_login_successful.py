@@ -14,3 +14,4 @@ def test_001_login_successful_pom(login_page) -> None:
 
 # pytest --headed --slowmo 1000 -k test_001_login_successful_pom
 # pip freeze > requirements.txt
+# pip install -r requirements.txt
