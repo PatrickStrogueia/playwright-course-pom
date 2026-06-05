@@ -13,3 +13,4 @@ def test_001_login_successful_pom(login_page) -> None:
     login_page.assert_login_successful()
 
 # pytest --headed --slowmo 1000 -k test_001_login_successful_pom
+# pip freeze > requirements.txt
