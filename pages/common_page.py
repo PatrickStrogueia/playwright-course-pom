@@ -6,6 +6,8 @@ class CommonPage:
         self.voltar_para_home_button = page.get_by_role("button", name="Voltar para a Home")
     
     def assert_text(self, text):
+        self.page.get_by_text(text).wait_for()
+        # expect(self.page.get_by_text(text)).to_be_visible(timeout=5)
         expect(self.page.get_by_text(text)).to_be_visible()
 
     def page_pause(self):
@@ -13,3 +15,4 @@ class CommonPage:
     
     def voltar_home(self):
         self.voltar_para_home_button.click()
+        

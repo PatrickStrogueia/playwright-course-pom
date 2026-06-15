@@ -8,6 +8,7 @@ class PixPage:
         self.enviar_pix_button = page.get_by_role("button", name="Enviar Pix")
         
     def fazer_pix(self, chave, valor):
+        self.chave_pix.wait_for()
         self.chave_pix.fill(chave)
         self.valor_pix.fill(valor)
         self.enviar_pix_button.click()
