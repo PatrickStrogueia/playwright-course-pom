@@ -15,4 +15,3 @@ class CommonPage:
     
     def voltar_home(self):
         self.voltar_para_home_button.click()
-        
